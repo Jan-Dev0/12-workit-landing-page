@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://jan-dev0.github.io/11-results-summary-component)
+- [Solution URL](https://jan-dev0.github.io/12-workit-landing-page)
 
 ## My process
 
