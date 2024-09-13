@@ -75,7 +75,7 @@ body {
   color: var(--green);
   border: 2px solid var(--green);
 }
-
+/* Header styles */
 .header {
   background-color: var(--purple-900);
   padding: 3.2rem 2rem 0 2rem;
@@ -91,7 +91,7 @@ body {
   line-height: 1.8;
   border-bottom: 4px solid var(--green);
 }
-
+/* Hero styles */
 .hero {
   background-color: var(--purple-900);
   color: var(--white);
@@ -119,6 +119,7 @@ body {
   margin-top: 6.4rem;
   max-width: 50rem;
 }
+/* Features section styles */
 .features {
   background-color: var(--purple-100);
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" preserveAspectRatio="none"><path d="M 0 0 H 300 V 150 Q 150 170 0 150 Z" fill="%23fdfaff" /></svg>')
@@ -136,12 +137,18 @@ body {
 }
 .features__index {
   font-family: "Fraunces", serif;
-  font-size: 3.6rem;
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--slate--900);
   border-radius: 100%;
-  padding: 1.6rem;
+  padding: 2rem;
   aspect-ratio: 1 / 1;
   margin-bottom: 2.8rem;
 }
@@ -152,12 +159,13 @@ body {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.6rem;
+  text-align: center;
 }
 .features__text {
   line-height: 1.8;
   text-align: center;
 }
-
+/* Cta section styles */
 .cta {
   padding: 11.2rem 2rem 0 2rem;
 }
@@ -191,7 +199,7 @@ body {
 
 /* Footer styles */
 .footer {
-  padding: 8rem 3.2rem 3.2rem 8rem;
+  padding: 8rem 3.2rem 8rem 3.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,28 +222,99 @@ body {
 
 /* Responisve styles for table view */
 @media (min-width: 48rem) {
-  .hero {
-  background: url(./assets/images/bg-pattern-1.svg) no-repeat -20rem 5rem / 30rem 30rem,
-    url(./assets/images/bg-pattern-2.svg) no-repeat bottom 20rem right -10rem / 20rem 20rem,
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" preserveAspectRatio="none"><path d="M 0 0 H 300 V 150 Q 150 170 0 150 Z" fill="%2324053d" /></svg>')
-      no-repeat top/100% 90%,
-    #fdfaff;
+  /* Button */
+  .btn {
+    font-size: 1.8rem;
+  }
+  /* Header */
+.header {
+  padding-left: 4.4rem;
+  padding-right: 4.4rem;
 }
-.features__item {
-  flex-direction: row;
-  align-items: center;
-  gap: 3.2rem;
+  /* Hero */
+  .hero {
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+    background: url(./assets/images/bg-pattern-1.svg) no-repeat -20rem 5rem / 30rem
+        30rem,
+      url(./assets/images/bg-pattern-2.svg) no-repeat bottom 20rem right -10rem /
+        20rem 20rem,
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" preserveAspectRatio="none"><path d="M 0 0 H 300 V 150 Q 150 170 0 150 Z" fill="%2324053d" /></svg>')
+        no-repeat top/100% 90%,
+      #fdfaff;
+  }
+  .hero__heading {
+    font-size: 6rem;
+    line-height: 1.2;
+    max-width: 75%;
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+  }
+  /* Feauters */
+  .features {
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+  }
+  .features__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .features__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+.features__heading {
+  font-size: 2.8rem;
+  text-align: left;
 
 }
-.features__content-wrapper {
+  .features__text {
+    text-align: left;
+  }
+}
+/* CTA */
+.cta {
+  padding-left: 4.4rem;
+  padding-right: 4.4rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
 }
-
-.features__text {
+.cta__image {
+  width: 50%;
+  margin-bottom: -15rem;
+  align-self: flex-start;
+}
+.cta__content {
+  width: 65%;
+  padding: 4.8rem;
+  align-items: flex-start;
+  align-self: flex-end;
+  position: relative;
+}
+.cta__content::after {
+  content: "";
+  position: absolute;
+  background: url(./assets/images/bg-pattern-3.svg) no-repeat;
+  right: 5rem;
+  bottom: -10rem;
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid red;
+}
+.cta__heading {
+  font-size: 4.8rem;
   text-align: left;
 }
+.cta__text {
+  text-align: left;
+}
+/* Footer */
+.footer {
+  padding-left: 4.4rem;
+  padding-right: 4.4rem;
 }
 
 /* Responsive styles for desktow view */
