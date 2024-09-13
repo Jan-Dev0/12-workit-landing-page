@@ -317,7 +317,7 @@ body {
 
 /* Responsive styles for desktow view */
 @media (min-width: 62rem) {
-   /* Header */
+  /* Header */
   .header {
     padding-left: 16rem;
     padding-right: 16rem;
@@ -329,12 +329,14 @@ body {
   }
   /* Feauters */
   .features {
+    padding-left: 16rem;
+    padding-right: 16rem;
     display: flex;
     gap: 3.2rem;
   }
   .features__item {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
   }
   .features__index {
     font-size: 2.4rem;
@@ -347,12 +349,17 @@ body {
   .features__text {
     font-size: 1.8rem;
     text-align: center;
+    border: 1px solid ;
+ 
   }
-
+.features__content-wrapper {
+  height: 75%;
+  justify-content: space-between;
+}
   /* CTA */
   .cta {
     padding-left: 16rem;
-  padding-right: 16rem;
+    padding-right: 16rem;
   }
   .cta__heading {
     font-size: 5.6rem;
