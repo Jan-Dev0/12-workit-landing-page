@@ -349,7 +349,6 @@ body {
   .features__text {
     font-size: 1.8rem;
     text-align: center;
-    border: 1px solid ;
  
   }
 .features__content-wrapper {
@@ -360,6 +359,7 @@ body {
   .cta {
     padding-left: 16rem;
     padding-right: 16rem;
+
   }
   .cta__heading {
     font-size: 5.6rem;
